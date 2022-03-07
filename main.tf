@@ -170,7 +170,7 @@ resource "azurerm_virtual_machine" "vm" {
   os_profile {
 
     computer_name  = "hostname"
-    admin_username = "henrik"
+    admin_username = var.admin_username
     admin_password = var.admin_password
 
   }
